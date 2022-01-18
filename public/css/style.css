@@ -1,3 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  margin: O;
+  padding: O;
+  box-sizing: border-box;
+}
 
+body {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.logo {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  padding: 25px 0 10px 0;
+  box-shadow: 0px 2px 8px #00000045;
+}
+.logo__header {
+  max-width: 45%;
+  margin: auto;
+  height: auto;
+}
+
+.location {
+  height: 10%;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.location__icon {
+  padding: 15px 20px 0 0;
+  position: relative;
+  margin: auto O;
+  font-size: 1em;
+}
+.location__title {
+  font-family: "Roboto", sans-serif;
+  color: #1a1a1a;
+}
+
+.section-header {
+  background-color: #f6f6f6;
+  padding-top: 11%;
+  padding-bottom: 15%;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  max-width: 1000px;
+}
+.hero__title {
+  width: 80%;
+  margin: 0 auto 3% auto;
+}
+.hero__text {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-bottom: 10%;
+}
+.hero__btn {
+  padding: 16px;
+  color: white;
+  font-size: 1rem;
+  border-style: none;
+  border-radius: 50px;
+  box-shadow: 0px 5px 5px 0px #0000002e;
+  background: #9356dc;
+  background: linear-gradient(351deg, #9356dc 0%, #ff79da 100%);
+  transition: 0.3s ease-in-out;
+}
+.hero__btn:hover {
+  transform: scale(1.02);
+  filter: brightness(1.2);
+}
 
 /*# sourceMappingURL=style.css.map */

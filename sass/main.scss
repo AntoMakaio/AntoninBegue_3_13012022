@@ -1,3 +1,18 @@
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiary: #99e2d0;
+@import "./utils/variables";
+// @import "./utils/functions";
+// @import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+// @import "./components/buttons";
+
+@import "./layout/header";
+// @import "./layout/nav";
+// @import "./layout/container";
+// @import "./layout/form";
+
+// @import "./pages/delice";
+// @import "./pages/francaise";
+// @import "./pages/note";
+// @import "./pages/palette";

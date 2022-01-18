@@ -1,0 +1,74 @@
+.logo {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+  padding: 25px 0 10px 0;
+  box-shadow: 0px 2px 8px #00000045;
+  &__header {
+    max-width: 45%;
+    margin: auto;
+    height: auto;
+  }
+}
+
+.location {
+  height: 10%;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  &__icon {
+    padding: 15px 20px 0 0;
+    position: relative;
+    margin: auto O;
+    font-size: 1em;
+  }
+  &__title {
+    font-family: $font-text;
+    color: rgb(26, 26, 26);
+  }
+}
+
+.section-header {
+  background-color: rgb(246, 246, 246);
+  padding-top: 11%;
+  padding-bottom: 15%;
+}
+.hero {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: $font-text;
+  max-width: 1000px;
+
+  &__title {
+    width: 80%;
+    margin: 0 auto 3% auto;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 10%;
+  }
+  &__btn {
+    padding: 16px;
+    color: white;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 50px;
+    box-shadow: $box-shadow;
+    background: rgb(147, 86, 220);
+    background: linear-gradient(
+      351deg,
+      rgba(147, 86, 220, 1) 0%,
+      rgba(255, 121, 218, 1) 100%
+    );
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+      filter: brightness(1.2);
+    }
+  }
+}
