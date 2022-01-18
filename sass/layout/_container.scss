@@ -1,0 +1,46 @@
+.step {
+  width: 90%;
+  font-family: $font-text;
+  font-size: 1.1rem;
+  margin: auto;
+  margin-top: 50px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__container {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    align-items: center;
+    margin: 25px 0 25px 10px;
+    height: 75px;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+      background-color: rgb(244, 237, 254);
+      &__icon {
+        color: $color-primary;
+      }
+    }
+  }
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    margin-left: -10px;
+  }
+  &__icon {
+    margin: 0 25px 0 20px;
+    color: grey;
+    font-size: 1.2rem;
+  }
+}

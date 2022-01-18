@@ -67,9 +67,10 @@ body {
   margin-bottom: 10%;
 }
 .hero__btn {
-  padding: 16px;
+  padding: 17px 20px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   border-style: none;
   border-radius: 50px;
   box-shadow: 0px 5px 5px 0px #0000002e;
@@ -80,6 +81,51 @@ body {
 .hero__btn:hover {
   transform: scale(1.02);
   filter: brightness(1.2);
+}
+
+.step {
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin: auto;
+  margin-top: 50px;
+}
+.step__title {
+  margin-bottom: 30px;
+}
+.step__container {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  margin: 25px 0 25px 10px;
+  height: 75px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px 0px #0000002e;
+  transition: 0.3s ease-in-out;
+}
+.step__container:hover {
+  transform: scale(1.02);
+  background-color: #f4edfe;
+}
+.step__container:hover__icon {
+  color: #9356dc;
+}
+.step__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356dc;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  margin-left: -10px;
+}
+.step__icon {
+  margin: 0 25px 0 20px;
+  color: grey;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
