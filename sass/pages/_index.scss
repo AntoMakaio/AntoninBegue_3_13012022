@@ -2,6 +2,7 @@
   background-color: rgb(246, 246, 246);
   width: 100%;
   margin-top: 4rem;
+  padding-bottom: 50px;
   &__title {
     padding-top: 3.6rem;
     margin-bottom: 1.6rem;
@@ -52,5 +53,23 @@
     &__image-#{$i} {
       background-image: url("../../public/img/card/image-card-#{$i}.jpg");
     }
+  }
+
+  &__info {
+    margin: 15px;
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 5px;
+  }
+  &__localisation {
+    font-weight: 300;
+  }
+
+  &__heart {
+    font-size: 1.6rem;
+    position: absolute;
+    right: 1rem;
+    top: 10%;
   }
 }

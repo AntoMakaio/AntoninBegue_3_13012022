@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: black;
+  color: inherit;
 }
 
 body {
@@ -33,8 +33,18 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  margin: 0;
+}
+
 p {
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .loader {
@@ -257,10 +267,33 @@ p {
   font-size: 1.2rem;
 }
 
+.footer {
+  background-color: #353535;
+  padding: 1.5rem;
+}
+.footer__title {
+  font-family: "Shrikhand", sans-serif, sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.footer__li {
+  color: white;
+  padding: 5px;
+}
+.footer__li:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+  padding-right: 5px;
+}
+
 .item {
   background-color: #f6f6f6;
   width: 100%;
   margin-top: 4rem;
+  padding-bottom: 50px;
 }
 .item__title {
   padding-top: 3.6rem;
@@ -320,6 +353,22 @@ p {
 }
 .card__image-4 {
   background-image: url("../../public/img/card/image-card-4.jpg");
+}
+.card__info {
+  margin: 15px;
+  position: relative;
+}
+.card__title {
+  margin-bottom: 5px;
+}
+.card__localisation {
+  font-weight: 300;
+}
+.card__heart {
+  font-size: 1.6rem;
+  position: absolute;
+  right: 1rem;
+  top: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
