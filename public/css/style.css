@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   margin: O;
   padding: O;
@@ -158,17 +156,16 @@ p {
 }
 
 .location {
-  height: 10%;
+  height: 55px;
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .location__icon {
-  padding: 15px 20px 0 0;
-  position: relative;
-  margin: auto O;
   font-size: 1em;
+  margin-right: 15px;
 }
 .location__title {
   font-family: "Roboto", sans-serif;
@@ -183,6 +180,7 @@ p {
 
 .hero {
   width: 80%;
+  height: 23vh;
   margin: auto;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -282,29 +280,46 @@ p {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.item__restaurants .new {
+  position: relative;
+}
+.item__restaurants .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #278870;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 3px;
+  box-shadow: 0px 5px 5px 0px #0000002e;
+}
 
 .card {
-  border: 1px solid black;
+  box-shadow: 0px 5px 5px 0px #0000002e;
   border-radius: 20px;
   overflow: hidden;
 }
 .card__image {
-  background-image: url(/image1.jpg);
   background-size: cover;
   height: 11rem;
   width: 100%;
 }
-.card__new {
-  position: absolute;
-  margin-top: 15px;
-  text-align: center;
-  padding-top: 5px;
-  right: 9%;
-  width: 80px;
-  height: 30px;
-  border-radius: 3px;
-  color: #4b9479;
-  background-color: #abe0d1;
+.card__image-1 {
+  background-image: url("../../public/img/card/image-card-1.jpg");
+}
+.card__image-2 {
+  background-image: url("../../public/img/card/image-card-2.jpg");
+}
+.card__image-3 {
+  background-image: url("../../public/img/card/image-card-3.jpg");
+}
+.card__image-4 {
+  background-image: url("../../public/img/card/image-card-4.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

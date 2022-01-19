@@ -14,16 +14,15 @@
 }
 
 .location {
-  height: 10%;
+  height: 55px;
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
   &__icon {
-    padding: 15px 20px 0 0;
-    position: relative;
-    margin: auto O;
     font-size: 1em;
+    margin-right: 15px;
   }
   &__title {
     font-family: $font-text;
@@ -38,6 +37,7 @@
 }
 .hero {
   width: 80%;
+  height: 23vh;
   margin: auto;
   text-align: center;
   font-family: $font-text;
