@@ -1,0 +1,48 @@
+@use "../utils/variables";
+
+.item {
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+  margin-top: 4rem;
+  &__title {
+    padding-top: 3.6rem;
+    margin-bottom: 1.6rem;
+    margin-left: 5%;
+    font-size: 1.6rem;
+  }
+  &__restaurants {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+    @media screen and (max-width: $bp-mobile) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  &__image {
+    background-image: url(/image1.jpg);
+    background-size: cover;
+    height: 11rem;
+    width: 100%;
+  }
+
+  &__new {
+    position: absolute;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 5px;
+    right: 9%;
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    color: rgb(75, 148, 121);
+    background-color: rgb(171, 224, 209);
+  }
+}

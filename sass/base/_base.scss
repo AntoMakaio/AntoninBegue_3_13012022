@@ -7,4 +7,12 @@
 body {
   width: 100%;
   margin: auto;
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: black;
+  }
 }

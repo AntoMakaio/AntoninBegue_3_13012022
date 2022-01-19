@@ -17,7 +17,7 @@
   </head>
   <body>
     <!--*********** LOADER ************-->
-    <div class="loader">
+    <!-- <div class="loader">
       <div class="wrapper">
         <div class="circle"></div>
         <div class="circle circle2"></div>
@@ -26,7 +26,7 @@
         <div class="shadow"></div>
         <div class="shadow"></div>
       </div>
-    </div>
+    </div> -->
 
     <!--*********** HEADER ************-->
     <header class="header">
@@ -81,14 +81,14 @@
         </div>
       </section>
 
-      <section class="section-restaurants">
-        <div class="restaurants">
-          <h2 class="restaurants__title">Restaurants</h2>
-
+      <section class="item">
+        <h2 class="item__title">Restaurants</h2>
+        <div class="item__restaurants">
           <a href="#" class="card">
-            <div class="card__image"></div>
-            <div class="card__new">
-              <p class="card__nouveau">Nouveau</p>
+            <div class="card__image">
+              <div class="card__new">
+                <p class="card__nouveau">Nouveau</p>
+              </div>
             </div>
             <div class="card__container">
               <div class="card__info">
@@ -103,9 +103,10 @@
           </a>
 
           <a href="#" class="card">
-            <div class="card__image"></div>
-            <div class="card__new">
-              <p class="card__nouveau">Nouveau</p>
+            <div class="card__image">
+              <div class="card__new">
+                <p class="card__nouveau">Nouveau</p>
+              </div>
             </div>
             <div class="card__container">
               <div class="card__info">
@@ -118,14 +119,8 @@
               </div>
             </div>
           </a>
-          <div class="card">
-            <img
-              src="./public/img/restaurants/card/a-la-francaise-card.jpg"
-              alt="Restaurant La palette du goût"
-            />
-            <div class="card__new">
-              <p class="card__nouveau">Nouveau</p>
-            </div>
+          <a href="#" class="card">
+            <div class="card__image"></div>
             <div class="card__container">
               <div class="card__info">
                 <h3 class="card__title">À la française</h3>
@@ -136,15 +131,9 @@
                 <span class="card__heart--color"></span>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <img
-              src="./public/img/restaurants/card/le-delice-des-sens-card.jpg"
-              alt="Restaurant La palette du goût"
-            />
-            <div class="card__new">
-              <p class="card__nouveau">Nouveau</p>
-            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card__image"></div>
             <div class="card__container">
               <div class="card__info">
                 <h3 class="card__title">Le délice des sens</h3>
@@ -155,31 +144,28 @@
                 <span class="card__heart--color"></span>
               </div>
             </div>
-          </div>
-          -->
+          </a>
         </div>
       </section>
     </main>
-    <!--
-      <footer class="footer">
-        <div class="footer__logo">
-          <img
-            src="./public/img/logo/ohmyfood.png"
-            alt="Logo de la chaine de restaurant Oh My Food"
-            class="logo__footer"
-          />
-        </div>
-        <ul class="footer__ul">
-          <li class="footer__li">
-            <i class="fas fa-utensils"></i> Proposer un restaurant
-          </li>
-          <li class="footer__li">
-            <i class="fas fa-hands-helping"></i> Devenir partenaire
-          </li>
-          <li class="footer__li">Mentions légales</li>
-          <li class="footer__li">Contact</li>
-        </ul>
-      </footer>
-    -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <img
+          src="./public/img/logo/ohmyfood.png"
+          alt="Logo de la chaine de restaurant Oh My Food"
+          class="logo__footer"
+        />
+      </div>
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <i class="fas fa-utensils"></i> Proposer un restaurant
+        </li>
+        <li class="footer__li">
+          <i class="fas fa-hands-helping"></i> Devenir partenaire
+        </li>
+        <li class="footer__li">Mentions légales</li>
+        <li class="footer__li">Contact</li>
+      </ul>
+    </footer>
   </body>
 </html>
