@@ -21,9 +21,6 @@
     &:hover {
       transform: scale(1.02);
       background-color: lighten($color: $color-primary, $amount: 35%);
-      &__icon {
-        color: $color-primary;
-      }
     }
   }
   &__number {
