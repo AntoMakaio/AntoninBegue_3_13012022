@@ -20,7 +20,7 @@
     transition: 0.3s ease-in-out;
     &:hover {
       transform: scale(1.02);
-      background-color: rgb(244, 237, 254);
+      background-color: lighten($color: $color-primary, $amount: 35%);
       &__icon {
         color: $color-primary;
       }
