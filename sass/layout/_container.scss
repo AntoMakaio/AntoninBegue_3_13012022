@@ -21,12 +21,14 @@
     &:hover {
       transform: scale(1.02);
       background-color: lighten($color: $color-primary, $amount: 35%);
+      box-shadow: $box-shadow-hover;
+      .step__icon:before {
+        color: $color-primary;
+      }
     }
   }
   &__number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     background-color: $color-primary;
     color: white;
     width: 25px;

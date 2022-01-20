@@ -12,9 +12,10 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 a:visited {
-  color: inherit;
+  color: black;
 }
 
 body {
@@ -217,7 +218,8 @@ ul {
 }
 .hero__btn:hover {
   transform: scale(1.02);
-  filter: brightness(1.2);
+  filter: brightness(1.1);
+  box-shadow: 0px 5px 5px 3px #0000003b;
 }
 
 .step {
@@ -243,6 +245,10 @@ ul {
 .step__container:hover {
   transform: scale(1.02);
   background-color: #f2eafb;
+  box-shadow: 0px 5px 5px 3px #0000003b;
+}
+.step__container:hover .step__icon:before {
+  color: #9356dc;
 }
 .step__number {
   display: flex;
@@ -284,14 +290,14 @@ ul {
   padding-right: 5px;
 }
 .footer__link {
-  color: white;
+  color: white !important;
 }
 
 .item {
   background-color: #f6f6f6;
   width: 100%;
   margin-top: 4rem;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 .item__title {
   padding-top: 3.6rem;
@@ -331,13 +337,19 @@ ul {
 }
 
 .card {
+  background-color: white;
   box-shadow: 0px 5px 5px 0px #0000002e;
   border-radius: 20px;
   overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 5px 5px 3px #0000003b;
 }
 .card__image {
   background-size: cover;
-  height: 11rem;
+  height: 12rem;
   width: 100%;
 }
 .card__image-1 {
@@ -367,6 +379,20 @@ ul {
   position: absolute;
   right: 1rem;
   top: 10%;
+}
+.card__heart--solid {
+  color: transparent;
+  background-image: linear-gradient(351deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.card__heart--regular {
+  opacity: 1;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+.card__heart--regular:hover {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
