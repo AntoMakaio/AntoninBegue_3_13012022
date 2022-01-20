@@ -3,3 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin boucle {
+  @for $i from 1 through 4 {
+    &__image-#{$i} {
+      background-image: url("../../public/img/card/image-card-#{$i}.jpg");
+    }
+  }
+}

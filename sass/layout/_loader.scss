@@ -5,9 +5,10 @@
   width: 100%;
   height: 100vh;
   background: rgba(78, 78, 78, 0.8) 0%;
-  animation: circle 0s ease-out 5s;
+  animation: loader 3s;
 }
 .wrapper {
+  animation: circle 0s ease-out 5s hidden;
   width: 200px;
   height: 60px;
   position: absolute;
@@ -23,7 +24,7 @@
   background-color: #9356dc;
   left: 15%;
   transform-origin: 50%;
-  animation: circle 0.5s alternate infinite ease;
+  animation: circle 0.5s alternate 24 ease;
 }
 
 .circle2 {
@@ -32,6 +33,17 @@
 
 .circle3 {
   background-color: #99e2d0;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @keyframes circle {
@@ -70,7 +82,7 @@
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  animation: shadow 0.5s alternate infinite ease;
+  animation: shadow 0.5s alternate 24 ease;
 }
 
 @keyframes shadow {

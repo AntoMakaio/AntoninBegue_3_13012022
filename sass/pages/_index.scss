@@ -45,7 +45,7 @@
   overflow: hidden;
   transition: 0.3s ease-in-out;
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     box-shadow: $box-shadow-hover;
   }
   &__image {
@@ -53,11 +53,8 @@
     height: 12rem;
     width: 100%;
   }
-  @for $i from 1 through 4 {
-    &__image-#{$i} {
-      background-image: url("../../public/img/card/image-card-#{$i}.jpg");
-    }
-  }
+
+  @include boucle;
 
   &__info {
     margin: 15px;

@@ -19,10 +19,10 @@
     box-shadow: $box-shadow;
     transition: 0.3s ease-in-out;
     &:hover {
-      transform: scale(1.02);
+      transform: scale(1.01);
       background-color: lighten($color: $color-primary, $amount: 35%);
       box-shadow: $box-shadow-hover;
-      .step__icon:before {
+      .step__icon {
         color: $color-primary;
       }
     }
@@ -36,6 +36,7 @@
     border-radius: 50%;
     font-size: 0.9rem;
     margin-left: -10px;
+    line-height: 25px;
   }
   &__icon {
     margin: 0 25px 0 20px;

@@ -6,6 +6,7 @@
   text-align: center;
   padding: 25px 0 10px 0;
   box-shadow: 0px 2px 8px #00000045;
+  overflow-y: hidden;
   &__header {
     max-width: 45%;
     margin: auto;
@@ -66,7 +67,7 @@
     );
     transition: 0.3s ease-in-out;
     &:hover {
-      transform: scale(1.02);
+      transform: scale(1.01);
       filter: brightness(1.1);
       box-shadow: $box-shadow-hover;
     }

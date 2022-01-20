@@ -53,10 +53,11 @@ ul {
   width: 100%;
   height: 100vh;
   background: rgba(78, 78, 78, 0.8) 0%;
-  animation: circle 0s ease-out 5s;
+  animation: loader 3s;
 }
 
 .wrapper {
+  animation: circle 0s ease-out 5s hidden;
   width: 200px;
   height: 60px;
   position: absolute;
@@ -73,7 +74,7 @@ ul {
   background-color: #9356dc;
   left: 15%;
   transform-origin: 50%;
-  animation: circle 0.5s alternate infinite ease;
+  animation: circle 0.5s alternate 24 ease;
 }
 
 .circle2 {
@@ -84,6 +85,16 @@ ul {
   background-color: #99e2d0;
 }
 
+@keyframes loader {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 @keyframes circle {
   0% {
     top: 60px;
@@ -122,7 +133,7 @@ ul {
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  animation: shadow 0.5s alternate infinite ease;
+  animation: shadow 0.5s alternate 24 ease;
 }
 
 @keyframes shadow {
@@ -157,6 +168,7 @@ ul {
   text-align: center;
   padding: 25px 0 10px 0;
   box-shadow: 0px 2px 8px #00000045;
+  overflow-y: hidden;
 }
 .logo__header {
   max-width: 45%;
@@ -217,7 +229,7 @@ ul {
   transition: 0.3s ease-in-out;
 }
 .hero__btn:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   filter: brightness(1.1);
   box-shadow: 0px 5px 5px 3px #0000003b;
 }
@@ -243,11 +255,11 @@ ul {
   transition: 0.3s ease-in-out;
 }
 .step__container:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   background-color: #f2eafb;
   box-shadow: 0px 5px 5px 3px #0000003b;
 }
-.step__container:hover .step__icon:before {
+.step__container:hover .step__icon {
   color: #9356dc;
 }
 .step__number {
@@ -261,6 +273,7 @@ ul {
   border-radius: 50%;
   font-size: 0.9rem;
   margin-left: -10px;
+  line-height: 25px;
 }
 .step__icon {
   margin: 0 25px 0 20px;
@@ -344,7 +357,7 @@ ul {
   transition: 0.3s ease-in-out;
 }
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   box-shadow: 0px 5px 5px 3px #0000003b;
 }
 .card__image {
