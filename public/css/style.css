@@ -378,6 +378,7 @@ ul {
 }
 .card__image {
   background-size: cover;
+  background-position: bottom;
   height: 12rem;
   width: 100%;
 }
