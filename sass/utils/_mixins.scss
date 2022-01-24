@@ -11,3 +11,14 @@
     }
   }
 }
+
+@mixin line {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background-color: $color-tertiary;
+    bottom: -0.4rem;
+  }
+}
