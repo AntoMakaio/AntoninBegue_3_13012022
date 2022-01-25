@@ -52,7 +52,7 @@
 }
 .hero {
   width: 80%;
-  height: 23vh;
+  height: 24vh;
   margin: auto;
   text-align: center;
   font-family: $font-text;
@@ -60,28 +60,21 @@
 
   &__title {
     width: 80%;
-    margin: 0 auto 3% auto;
+    line-height: 1.8rem;
+    margin: 0 auto 1rem auto;
   }
   &__text {
     font-weight: 300;
+    line-height: 1.4rem;
     font-size: 1.1rem;
     margin-bottom: 10%;
   }
   &__btn {
+    cursor: pointer;
     padding: 17px 20px;
-    color: white;
     font-size: 1.1rem;
     font-weight: 500;
-    border-style: none;
-    border-radius: 50px;
-    box-shadow: $box-shadow;
-    background: rgb(147, 86, 220);
-    background: linear-gradient(
-      351deg,
-      rgba(147, 86, 220, 1) 0%,
-      rgba(255, 121, 218, 1) 100%
-    );
-    transition: 0.3s ease-in-out;
+    @include btn;
     &:hover {
       transform: scale(1.01);
       filter: brightness(1.1);
