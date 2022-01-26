@@ -523,6 +523,9 @@ input[type=checkbox]:checked + label span {
   bottom: -0.4rem;
 }
 .menu__item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: white;
   margin: 1rem 0;
   height: 4.3rem;
@@ -532,7 +535,6 @@ input[type=checkbox]:checked + label span {
   overflow: hidden;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
 }
 .menu__item:hover {
   transform: scale(1.01);
@@ -549,6 +551,7 @@ input[type=checkbox]:checked + label span {
   animation: rotate-center 0.5s ease-in-out both;
 }
 .menu__container {
+  overflow: hidden;
   width: 80%;
   margin: auto 0 auto 0.8rem;
 }
@@ -628,6 +631,77 @@ input[type=checkbox]:checked + label span {
   transform: scale(1.01);
   filter: brightness(1.1);
   box-shadow: 0px 5px 5px 1px #0000002a;
+}
+
+.slide-top--1 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.2s;
+}
+.slide-top--2 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.4s;
+}
+.slide-top--3 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.6s;
+}
+.slide-top--4 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.8s;
+}
+.slide-top--5 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+}
+.slide-top--6 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.2s;
+}
+.slide-top--7 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.4s;
+}
+.slide-top--8 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.6s;
+}
+.slide-top--9 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.8s;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-top {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
