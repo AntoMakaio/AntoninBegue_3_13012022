@@ -1,0 +1,17 @@
+.button-sub {
+  margin-top: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  &__btn {
+    cursor: pointer;
+    padding: 15px 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    @include btn;
+    &:hover {
+      transform: scale(1.01);
+      filter: brightness(1.1);
+      box-shadow: $box-shadow-hover;
+    }
+  }
+}

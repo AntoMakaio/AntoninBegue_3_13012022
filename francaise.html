@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Menu du restaurant À la Française" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/base/normalise.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/logo/favicon-booki.png"
+    />
+    <title>À la Française - Oh My Food</title>
+  </head>
+  <body>
+    <!--*********** HEADER ************-->
+
+    <header class="header">
+      <div class="header__arrow">
+        <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div class="logo">
+        <img
+          src="./public/img/logo/ohmyfood.png"
+          alt="Logo de la chaine de restaurant Oh My Food"
+          class="logo__header"
+        />
+      </div>
+    </header>
+
+    <!--*********** HERO ************-->
+    <main class="main">
+      <div class="hero-banner">
+        <img
+          src="./public/img/background/a-la-francaise-bg.jpg"
+          alt="Restaurant À la Française"
+          class="hero-banner__image"
+        />
+      </div>
+      <!--*********** MENU ************-->
+      <div class="wrapper-menu">
+        <div class="wrapper-menu__header">
+          <h1 class="wrapper-menu__title">À la Française</h1>
+          <div class="wrapper-menu__heart">
+            <i
+              class="fas fa-heart wrapper-menu__heart wrapper-menu__heart--solid"
+            ></i>
+            <i
+              class="far fa-heart wrapper-menu__heart wrapper-menu__heart--regular"
+            ></i>
+          </div>
+        </div>
+        <!--*********** FORMULAIRE DE COMMANDE ************-->
+
+        <form method="post" action="#" id="order-card">
+          <!--*********** ENTREES ************-->
+
+          <fieldset class="menu">
+            <legend class="menu__title">ENTRÉES</legend>
+            <label class="menu__item slide-top--1" for="entree-francaise-1">
+              <input
+                type="checkbox"
+                id="entree-francaise-1"
+                name="entree-francaise-1"
+              />
+              <span class="menu__container span">
+                <span class="menu__description span"
+                  >Tartare de poulpe acidulé</span
+                >
+                <span class="menu__accompagnement span"
+                  >Aux zestes d'orange</span
+                >
+              </span>
+              <span class="menu__price span">25€</span>
+              <span class="menu__check span">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+
+            <label class="menu__item slide-top--2" for="entree-francaise-2">
+              <input
+                type="checkbox"
+                id="entree-francaise-2"
+                name="entree-francaise-2"
+              />
+              <span class="menu__container">
+                <span class="menu__description span"
+                  >Velouté de légumes d'antan</span
+                >
+                <span class="menu__accompagnement span"
+                  >Carotte, panais, topinambour</span
+                >
+              </span>
+              <span class="menu__price">35€</span>
+              <span class="menu__check">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+
+            <label class="menu__item slide-top--3" for="entree-francaise-3">
+              <input
+                type="checkbox"
+                id="entree-francaise-3"
+                name="entree-francaise-3"
+              />
+              <span class="menu__container">
+                <span class="menu__description span">Soupe à l'oignon</span>
+                <span class="menu__accompagnement span">Revisitée</span>
+              </span>
+              <span class="menu__price">20€</span>
+              <span class="menu__check">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+          </fieldset>
+
+          <!--*********** PLATS ************-->
+
+          <fieldset class="menu">
+            <legend class="menu__title">PLATS</legend>
+            <label class="menu__item slide-top--4" for="plat-francaise-1">
+              <input
+                type="checkbox"
+                id="plat-francaise-1"
+                name="plat-francaise-1"
+              />
+              <span class="menu__container span">
+                <span class="menu__description span"
+                  >Coquilles Saint-Jacques</span
+                >
+                <span class="menu__accompagnement span"
+                  >Accompagnées d'une purée de panais</span
+                >
+              </span>
+              <span class="menu__price span">40€</span>
+              <span class="menu__check span">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+
+            <label class="menu__item slide-top--5" for="plat-francaise-2">
+              <input
+                type="checkbox"
+                id="plat-francaise-2"
+                name="plat-francaise-2"
+              />
+              <span class="menu__container">
+                <span class="menu__description span">Magret de canard</span>
+                <span class="menu__accompagnement span"
+                  >Et parmentier de pommes de terre</span
+                >
+              </span>
+              <span class="menu__price">35€</span>
+              <span class="menu__check">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+
+            <label class="menu__item slide-top--6" for="plat-francaise-3">
+              <input
+                type="checkbox"
+                id="plat-francaise-3"
+                name="plat-francaise-3"
+              />
+              <span class="menu__container">
+                <span class="menu__description span"
+                  >Pigeonneau d’Ille-et-Vilaine</span
+                >
+                <span class="menu__accompagnement span"
+                  >Sur son lit de gnocchis aux légumes</span
+                >
+              </span>
+              <span class="menu__price">44€</span>
+              <span class="menu__check">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+          </fieldset>
+          <!--*********** DESSERTS ************-->
+
+          <fieldset class="menu">
+            <legend class="menu__title">DESSERTS</legend>
+            <label class="menu__item slide-top--7" for="dessert-francaise-1">
+              <input
+                type="checkbox"
+                id="dessert-francaise-1"
+                name="dessert-francaise-1"
+              />
+              <span class="menu__container span">
+                <span class="menu__description span"
+                  >Pétales de violettes glacés</span
+                >
+                <span class="menu__accompagnement span"
+                  >Et purée de noisettes</span
+                >
+              </span>
+              <span class="menu__price span">18€</span>
+              <span class="menu__check span">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+
+            <label class="menu__item slide-top--8" for="dessert-francaise-2">
+              <input
+                type="checkbox"
+                id="dessert-francaise-2"
+                name="dessert-francaise-2"
+              />
+              <span class="menu__container">
+                <span class="menu__description span">Fondant au chocolat</span>
+                <span class="menu__accompagnement span">Revisité</span>
+              </span>
+              <span class="menu__price">22€</span>
+              <span class="menu__check">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+
+            <label class="menu__item slide-top--9" for="dessert-francaise-3">
+              <input
+                type="checkbox"
+                id="dessert-francaise-3"
+                name="dessert-francaise-3"
+              />
+              <span class="menu__container">
+                <span class="menu__description span"
+                  >Millefeuille croustillant</span
+                >
+                <span class="menu__accompagnement span"
+                  >Myrtilles et pâte d’amande</span
+                >
+              </span>
+              <span class="menu__price">23€</span>
+              <span class="menu__check">
+                <i class="fas fa-check-circle menu__circle rotate-center"></i>
+              </span>
+            </label>
+          </fieldset>
+          <div class="button-sub">
+            <button class="button-sub__btn btn">Commander</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- **************** FOOTER **************** -->
+
+    <footer class="footer footer-page">
+      <h2 class="footer__title">ohmyfood</h2>
+      <ul class="footer__ul">
+        <li class="footer__li">
+          <a href="#" class="footer__link"
+            ><i class="fas fa-utensils footer__icon"></i> Proposer un
+            restaurant</a
+          >
+        </li>
+        <li class="footer__li">
+          <a href="#" class="footer__link"
+            ><i class="fas fa-hands-helping footer__icon"></i> Devenir
+            partenaire</a
+          >
+        </li>
+        <li class="footer__li">
+          <a href="#" class="footer__link">Mentions légales</a>
+        </li>
+        <li class="footer__li">
+          <a href="mailto:antonin.begue@live.fr" class="footer__link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
