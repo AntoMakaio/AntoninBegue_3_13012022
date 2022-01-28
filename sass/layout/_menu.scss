@@ -1,0 +1,86 @@
+.menu {
+  border: none;
+  margin: 0.8rem 0;
+  padding: 0;
+  min-width: AUTO;
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 300;
+    position: relative;
+    padding-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    @include line;
+  }
+  &__item {
+    background-color: white;
+    margin: 1rem 0;
+    height: 4.3rem;
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    display: flex;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: $box-shadow-hover;
+      .menu__check {
+        margin-right: 0;
+      }
+      .menu__price {
+        padding-right: 0.8rem;
+      }
+      .rotate-center {
+        -webkit-animation: rotate-center 0.5s ease-in-out both;
+        animation: rotate-center 0.5s ease-in-out both;
+      }
+    }
+
+    @for $i from 1 through 10 {
+      &--#{$i} {
+        @include slide;
+        animation-delay: ($i * 0.2s);
+      }
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+    width: 80%;
+    margin: auto 0 auto 0.8rem;
+  }
+
+  &__description {
+    @include ellipsis;
+    padding-bottom: 5px;
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+  &__accompagnement {
+    @include ellipsis;
+    font-weight: 300;
+  }
+  &__price {
+    margin-top: auto;
+    margin-left: auto;
+    padding: 0 1.5rem 0.7rem 0;
+    transition: 0.3s ease-in-out;
+  }
+  &__check {
+    color: white;
+    padding-top: 0.2rem;
+    font-size: 1.3rem;
+    position: relative;
+    margin-right: -4rem;
+    width: 4rem;
+    @include flex-center;
+    background-color: $color-tertiary;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+.input-check:checked + label {
+  @include checked;
+  border: 1px solid $color-tertiary;
+}

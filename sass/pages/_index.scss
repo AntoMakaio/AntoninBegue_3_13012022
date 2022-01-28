@@ -1,3 +1,54 @@
+.header {
+  position: relative;
+}
+
+.step {
+  width: 90%;
+  font-family: $font-text;
+  font-size: 1.1rem;
+  margin: auto;
+  margin-top: 50px;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__container {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    align-items: center;
+    margin: 25px 0 25px 10px;
+    height: 80px;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+      background-color: lighten($color: $color-primary, $amount: 35%);
+      box-shadow: $box-shadow-hover;
+      .step__icon {
+        color: $color-primary;
+      }
+    }
+  }
+  &__number {
+    @include flex-center;
+    background-color: $color-primary;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    margin-left: -10px;
+    line-height: 25px;
+  }
+  &__icon {
+    margin: 0 25px 0 20px;
+    color: grey;
+    font-size: 1.2rem;
+  }
+}
+
 .item {
   background-color: rgb(246, 246, 246);
   width: 100%;

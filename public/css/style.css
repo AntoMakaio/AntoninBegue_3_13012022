@@ -67,10 +67,6 @@ input {
   position: absolute;
 }
 
-input[type=checkbox]:checked + label span {
-  background-color: yellow;
-}
-
 .span {
   display: block;
 }
@@ -245,8 +241,15 @@ ul {
   animation-delay: 0.3s;
 }
 
-.header {
-  position: relative;
+.header__arrow {
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+.header__arrow:hover {
+  transform: scale(1.1);
 }
 
 .logo {
@@ -343,6 +346,226 @@ ul {
   object-fit: cover;
 }
 
+.menu {
+  border: none;
+  margin: 0.8rem 0;
+  padding: 0;
+  min-width: AUTO;
+}
+.menu__title {
+  font-size: 1.1rem;
+  font-weight: 300;
+  position: relative;
+  padding-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.menu__title::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  background-color: #99e2d0;
+  bottom: -0.4rem;
+}
+.menu__item {
+  background-color: white;
+  margin: 1rem 0;
+  height: 4.3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 5px 0px #00000018;
+  display: flex;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.menu__item:hover {
+  box-shadow: 0px 5px 5px 1px #0000002a;
+}
+.menu__item:hover .menu__check {
+  margin-right: 0;
+}
+.menu__item:hover .menu__price {
+  padding-right: 0.8rem;
+}
+.menu__item:hover .rotate-center {
+  -webkit-animation: rotate-center 0.5s ease-in-out both;
+  animation: rotate-center 0.5s ease-in-out both;
+}
+.menu__item--1 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.2s;
+}
+.menu__item--2 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.4s;
+}
+.menu__item--3 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.6s;
+}
+.menu__item--4 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.8s;
+}
+.menu__item--5 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+}
+.menu__item--6 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.2s;
+}
+.menu__item--7 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.4s;
+}
+.menu__item--8 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.6s;
+}
+.menu__item--9 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1.8s;
+}
+.menu__item--10 {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 2s;
+}
+.menu__container {
+  overflow: hidden;
+  width: 80%;
+  margin: auto 0 auto 0.8rem;
+}
+.menu__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-bottom: 5px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+.menu__accompagnement {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 300;
+}
+.menu__price {
+  margin-top: auto;
+  margin-left: auto;
+  padding: 0 1.5rem 0.7rem 0;
+  transition: 0.3s ease-in-out;
+}
+.menu__check {
+  color: white;
+  padding-top: 0.2rem;
+  font-size: 1.3rem;
+  position: relative;
+  margin-right: -4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  transition: 0.4s ease-in-out;
+}
+
+.input-check:checked + label {
+  box-shadow: 0px 5px 5px 1px #0000002a;
+  border: 1px solid #99e2d0;
+}
+.input-check:checked + label .menu__check {
+  margin-right: 0;
+}
+.input-check:checked + label .menu__price {
+  padding-right: 0.8rem;
+}
+.input-check:checked + label .rotate-center {
+  -webkit-animation: rotate-center 0.5s ease-in-out both;
+  animation: rotate-center 0.5s ease-in-out both;
+}
+
+.wrapper-menu {
+  position: relative;
+  margin-top: -4rem;
+  height: 100%;
+  background: #f6f6f6;
+  padding: 1.2rem 1.2rem 3rem 1.2rem;
+  border-radius: 40px 40px 0 0;
+}
+.wrapper-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-menu__title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8rem;
+}
+.wrapper-menu__heart {
+  cursor: pointer;
+  position: absolute;
+  right: 0.5rem;
+  top: 1.2rem;
+  padding: 2px;
+  margin-right: 10px;
+  font-size: 1.6rem;
+}
+.wrapper-menu__heart--solid {
+  color: transparent;
+  background-image: linear-gradient(351deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.wrapper-menu__heart--regular {
+  opacity: 1;
+  background: #f6f6f6;
+  transition: 0.2s ease-in-out;
+}
+.wrapper-menu__heart--regular:hover {
+  opacity: 0;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 1.5rem;
+}
+.footer__title {
+  font-family: "Shrikhand", sans-serif, sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.footer__li {
+  color: white;
+  padding: 5px;
+}
+.footer__li:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+  padding-right: 5px;
+}
+.footer__link {
+  color: white !important;
+}
+
+.header {
+  position: relative;
+}
+
 .step {
   width: 90%;
   font-family: "Roboto", sans-serif;
@@ -388,158 +611,6 @@ ul {
   margin: 0 25px 0 20px;
   color: grey;
   font-size: 1.2rem;
-}
-
-.wrapper-menu {
-  position: relative;
-  margin-top: -4rem;
-  height: 100%;
-  background: #f6f6f6;
-  padding: 1.2rem 1.2rem 3rem 1.2rem;
-  border-radius: 40px 40px 0 0;
-}
-.wrapper-menu__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.wrapper-menu__title {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.8rem;
-}
-.wrapper-menu__heart {
-  position: absolute;
-  right: 0.5rem;
-  top: 1.2rem;
-  padding: 2px;
-  margin-right: 10px;
-  font-size: 1.6rem;
-}
-.wrapper-menu__heart--solid {
-  color: transparent;
-  background-image: linear-gradient(351deg, #9356dc 0%, #ff79da 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-.wrapper-menu__heart--regular {
-  opacity: 1;
-  background: #f6f6f6;
-  transition: 0.2s ease-in-out;
-}
-.wrapper-menu__heart--regular:hover {
-  opacity: 0;
-}
-
-.menu {
-  border: none;
-  margin: 0.8rem 0;
-  padding: 0;
-}
-.menu__title {
-  font-size: 1.1rem;
-  font-weight: 300;
-  position: relative;
-  padding-top: 0.5rem;
-  margin-left: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.menu__title::before {
-  content: "";
-  position: absolute;
-  width: 45px;
-  height: 3px;
-  background-color: #99e2d0;
-  bottom: -0.4rem;
-}
-.menu__item {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  background-color: white;
-  margin: 1rem 0;
-  height: 4.3rem;
-  border-radius: 1rem;
-  box-shadow: 0px 5px 5px 0px #00000018;
-  display: flex;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-.menu__item:hover {
-  box-shadow: 0px 5px 5px 1px #0000002a;
-}
-.menu__item:hover .menu__check {
-  margin-right: 0;
-}
-.menu__item:hover .menu__price {
-  padding-right: 0.8rem;
-}
-.menu__item:hover .rotate-center {
-  -webkit-animation: rotate-center 0.5s ease-in-out both;
-  animation: rotate-center 0.5s ease-in-out both;
-}
-.menu__container {
-  overflow: hidden;
-  width: 80%;
-  margin: auto 0 auto 0.8rem;
-}
-.menu__description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-bottom: 5px;
-  font-size: 1.17em;
-  font-weight: bold;
-}
-.menu__accompagnement {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-weight: 300;
-}
-.menu__price {
-  margin-top: auto;
-  margin-left: auto;
-  padding: 0 1.5rem 0.7rem 0;
-  transition: 0.3s ease-in-out;
-}
-.menu__check {
-  color: white;
-  padding-top: 0.2rem;
-  font-size: 1.3rem;
-  position: relative;
-  margin-right: -4rem;
-  width: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99e2d0;
-  transition: 0.4s ease-in-out;
-}
-
-.footer {
-  background-color: #353535;
-  padding: 1.5rem;
-}
-.footer__title {
-  font-family: "Shrikhand", sans-serif, sans-serif;
-  color: white;
-  font-size: 1.1rem;
-  margin: 0;
-  padding-bottom: 1rem;
-}
-.footer__li {
-  color: white;
-  padding: 5px;
-}
-.footer__li:hover {
-  text-decoration: underline;
-}
-.footer__icon {
-  padding-right: 5px;
-}
-.footer__link {
-  color: white !important;
 }
 
 .item {
@@ -645,204 +716,6 @@ ul {
 }
 .card__heart--regular:hover {
   opacity: 0;
-}
-
-.slide-top--1 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.2s;
-}
-.slide-top--2 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.4s;
-}
-.slide-top--3 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.6s;
-}
-.slide-top--4 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.8s;
-}
-.slide-top--5 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1s;
-}
-.slide-top--6 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.2s;
-}
-.slide-top--7 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.4s;
-}
-.slide-top--8 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.6s;
-}
-.slide-top--9 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.8s;
-}
-
-.slide-top--1 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.2s;
-}
-.slide-top--2 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.4s;
-}
-.slide-top--3 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.6s;
-}
-.slide-top--4 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.8s;
-}
-.slide-top--5 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1s;
-}
-.slide-top--6 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.2s;
-}
-.slide-top--7 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.4s;
-}
-.slide-top--8 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.6s;
-}
-.slide-top--9 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.8s;
-}
-
-.slide-top--1 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.2s;
-}
-.slide-top--2 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.4s;
-}
-.slide-top--3 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.6s;
-}
-.slide-top--4 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.8s;
-}
-.slide-top--5 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1s;
-}
-.slide-top--6 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.2s;
-}
-.slide-top--7 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.4s;
-}
-.slide-top--8 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.6s;
-}
-.slide-top--9 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.8s;
-}
-
-.header__arrow {
-  position: absolute;
-  z-index: 15;
-  top: 50%;
-  transform: translateY(-30%);
-  margin-left: 1.5rem;
-  font-size: 1.3rem;
-}
-
-.slide-top--1 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.2s;
-}
-.slide-top--2 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.4s;
-}
-.slide-top--3 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.6s;
-}
-.slide-top--4 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.8s;
-}
-.slide-top--5 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1s;
-}
-.slide-top--6 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.2s;
-}
-.slide-top--7 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.4s;
-}
-.slide-top--8 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.6s;
-}
-.slide-top--9 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1.8s;
-}
-.slide-top--10 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
