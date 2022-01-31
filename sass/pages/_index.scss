@@ -40,13 +40,20 @@
   font-size: 1.1rem;
   margin: auto;
   margin-top: 50px;
-
   &__wrapper {
     @media screen and (min-width: $bp-tablette) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
+    }
+    @media screen and (max-width: $bp-tablette) {
+      width: 70%;
+      margin: auto;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      width: 90%;
+      margin: auto;
     }
   }
 

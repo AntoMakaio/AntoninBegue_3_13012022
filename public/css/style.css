@@ -46,6 +46,7 @@
 }
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -679,6 +680,18 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .step__wrapper {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step__wrapper {
+    width: 90%;
+    margin: auto;
   }
 }
 .step__title {
