@@ -1,8 +1,10 @@
 @media screen and (min-width: $bp-tablette) {
   .fieldset {
     display: flex;
+    justify-content: center;
     min-width: auto;
     overflow: hidden;
+    flex-basis: 30%;
   }
 }
 
@@ -11,7 +13,13 @@
   margin: 0.8rem auto;
   padding: 0;
   min-width: AUTO;
-  // max-width: 500px;
+  @media screen and (min-width: $bp-tablette) {
+    width: 32%;
+  }
+  @media screen and (min-width: $bp-mobile) {
+    max-width: 730px;
+  }
+
   &__title {
     font-size: 1.1rem;
     font-weight: 300;

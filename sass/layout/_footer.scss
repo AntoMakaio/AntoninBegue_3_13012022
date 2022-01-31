@@ -3,6 +3,13 @@
   padding: 1.5rem;
   @media screen and (min-width: $bp-tablette) {
     text-align: center;
+    padding-bottom: 2.5rem;
+  }
+  @media screen and (max-width: $bp-tablette) {
+    text-align: center;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    text-align: left;
   }
 
   &__title {

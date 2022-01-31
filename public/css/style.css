@@ -242,9 +242,10 @@ ul {
 .header__arrow {
   position: absolute;
   z-index: 15;
-  top: 50%;
+  top: 40%;
   margin-left: 1.5rem;
   font-size: 1.3rem;
+  transition: 0.3s ease-in-out;
 }
 .header__arrow:hover {
   transform: scale(1.1);
@@ -272,9 +273,14 @@ ul {
   background: white;
 }
 .logo__header {
-  max-width: 300px;
+  max-width: 160px;
   margin: auto;
   height: auto;
+}
+@media screen and (min-width: 767px) {
+  .logo__header {
+    max-width: 200px;
+  }
 }
 
 .section-header {
@@ -336,12 +342,24 @@ ul {
   height: 35vh;
   object-fit: cover;
 }
+@media screen and (min-width: 767px) {
+  .hero-banner__image {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-banner__image {
+    height: 45vh;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .fieldset {
     display: flex;
+    justify-content: center;
     min-width: auto;
     overflow: hidden;
+    flex-basis: 30%;
   }
 }
 .menu {
@@ -349,6 +367,16 @@ ul {
   margin: 0.8rem auto;
   padding: 0;
   min-width: AUTO;
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    width: 32%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .menu {
+    max-width: 730px;
+  }
 }
 .menu__title {
   font-size: 1.1rem;
@@ -551,6 +579,17 @@ ul {
 @media screen and (min-width: 992px) {
   .footer {
     text-align: center;
+    padding-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: left;
   }
 }
 .footer__title {
