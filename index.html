@@ -46,15 +46,22 @@
           class="logo__header"
         />
       </div>
-      <div class="location">
-        <i class="fas fa-map-marker-alt location__icon"></i>
-        <p class="location__title">Paris, Belleville</p>
-      </div>
+      <nav class="localisation">
+        <form method="post" class="localisation__form">
+          <i class="fas fa-map-marker-alt location__icon"></i>
+          <input
+            type="search"
+            name="localisation"
+            placeholder="Paris, Belleville"
+            class="localisation__title"
+          />
+        </form>
+      </nav>
       <section class="section-header">
         <div class="hero">
           <h2 class="hero__title">Réservez le menu qui vous convient</h2>
           <p class="hero__text">
-            Découvrez des restaurantss d'exception, séléctionnés par nos soins.
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
           </p>
           <button class="hero__btn btn">Explorez nos restaurants</button>
         </div>
@@ -63,29 +70,31 @@
     <main class="main">
       <section class="step">
         <h2 class="step__title">Fonctionnement</h2>
-        <div class="step__container">
-          <div class="step__number">1</div>
-          <div class="step__choice">
-            <p class="step__text">
-              <i class="fas fa-mobile-alt step__icon"></i>Choisissez un
-              restaurant
-            </p>
+        <div class="step__wrapper">
+          <div class="step__container">
+            <div class="step__number">1</div>
+            <div class="step__choice">
+              <p class="step__text">
+                <i class="fas fa-mobile-alt step__icon"></i>Choisissez un
+                restaurant
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="step__container">
-          <div class="step__number">2</div>
-          <div class="step__choice">
-            <p class="step__text">
-              <i class="fas fa-list-ul step__icon"></i>Composez votre menu
-            </p>
+          <div class="step__container">
+            <div class="step__number">2</div>
+            <div class="step__choice">
+              <p class="step__text">
+                <i class="fas fa-list-ul step__icon"></i>Composez votre menu
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="step__container">
-          <div class="step__number">3</div>
-          <div class="step__choice">
-            <p class="step__text">
-              <i class="fas fa-store step__icon"></i>Dégustez au restaurant
-            </p>
+          <div class="step__container">
+            <div class="step__number">3</div>
+            <div class="step__choice">
+              <p class="step__text">
+                <i class="fas fa-store step__icon"></i>Dégustez au restaurant
+              </p>
+            </div>
           </div>
         </div>
       </section>

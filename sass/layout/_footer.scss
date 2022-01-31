@@ -1,6 +1,9 @@
 .footer {
   background-color: rgb(53, 53, 53);
   padding: 1.5rem;
+  @media screen and (min-width: $bp-tablette) {
+    text-align: center;
+  }
 
   &__title {
     font-family: $font-title, sans-serif;
@@ -8,6 +11,18 @@
     font-size: 1.1rem;
     margin: 0;
     padding-bottom: 1rem;
+    @media screen and (min-width: $bp-tablette) {
+      margin: 10px 0 20px 0;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__ul {
+    @media screen and (min-width: $bp-tablette) {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+    }
   }
 
   &__li {
