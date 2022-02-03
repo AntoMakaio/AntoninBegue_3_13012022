@@ -137,7 +137,7 @@ ul {
 }
 
 .wrapper {
-  animation: circle 0s ease-out 5s hidden;
+  animation: circle 0s ease-out 5s;
   width: 200px;
   height: 60px;
   position: absolute;
