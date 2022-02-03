@@ -40,10 +40,6 @@
     transition: 0.3s ease-in-out;
     cursor: pointer;
 
-    &--2-line {
-      height: 5.5rem;
-    }
-
     &:hover {
       box-shadow: $box-shadow-hover;
       .menu__check {
