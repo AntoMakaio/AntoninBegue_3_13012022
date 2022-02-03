@@ -721,6 +721,12 @@ ul {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 370px) {
+  .step__container {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
 .step__number {
   display: flex;
   justify-content: center;
@@ -739,7 +745,7 @@ ul {
   color: grey;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 350px) {
   .step__icon {
     margin: 0 10px 0 8px;
   }
