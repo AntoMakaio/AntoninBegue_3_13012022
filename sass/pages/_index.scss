@@ -40,6 +40,7 @@
   font-size: 1.1rem;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 80px;
   &__wrapper {
     @media screen and (min-width: $bp-tablette) {
       display: flex;
@@ -58,7 +59,7 @@
   }
 
   &__title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
   &__container {
@@ -66,7 +67,7 @@
     display: flex;
     align-items: center;
     margin: 25px 0 25px 10px;
-    height: 80px;
+    height: 76px;
     border-radius: 25px;
     box-shadow: $box-shadow;
     transition: 0.3s ease-in-out;

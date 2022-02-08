@@ -137,7 +137,7 @@ ul {
 }
 
 .wrapper {
-  animation: circle 0s ease-out 5s;
+  animation: circle 0s ease-out 5s hidden;
   width: 200px;
   height: 60px;
   position: absolute;
@@ -406,9 +406,6 @@ ul {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.menu__item--2-line {
-  height: 5.5rem;
-}
 .menu__item:hover {
   box-shadow: 0px 5px 5px 1px #0000002a;
 }
@@ -673,6 +670,7 @@ ul {
   font-size: 1.1rem;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 80px;
 }
 @media screen and (min-width: 992px) {
   .step__wrapper {
@@ -695,14 +693,14 @@ ul {
   }
 }
 .step__title {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .step__container {
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
   margin: 25px 0 25px 10px;
-  height: 80px;
+  height: 76px;
   border-radius: 25px;
   box-shadow: 0px 5px 5px 0px #00000018;
   transition: 0.3s ease-in-out;
