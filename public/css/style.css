@@ -1,46 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 @keyframes rotate-center {
   0% {
-    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes slide-top {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
   }
 }
 @keyframes slide-top {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -137,7 +111,7 @@ ul {
 }
 
 .wrapper {
-  animation: circle 0s ease-out 5s hidden;
+  animation: circle 0s ease-out 5s;
   width: 200px;
   height: 60px;
   position: absolute;
@@ -416,56 +390,45 @@ ul {
   padding-right: 0.8rem;
 }
 .menu__item:hover .rotate-center {
-  -webkit-animation: rotate-center 0.5s ease-in-out both;
   animation: rotate-center 0.5s ease-in-out both;
 }
 .menu__item--1 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 0.2s;
 }
 .menu__item--2 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 0.4s;
 }
 .menu__item--3 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 0.6s;
 }
 .menu__item--4 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 0.8s;
 }
 .menu__item--5 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1s;
 }
 .menu__item--6 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1.2s;
 }
 .menu__item--7 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1.4s;
 }
 .menu__item--8 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1.6s;
 }
 .menu__item--9 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1.8s;
 }
 .menu__item--10 {
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 2s;
 }
@@ -524,7 +487,6 @@ ul {
   padding-right: 0.8rem;
 }
 .input-check:checked + label .rotate-center {
-  -webkit-animation: rotate-center 0.5s ease-in-out both;
   animation: rotate-center 0.5s ease-in-out both;
 }
 
@@ -559,7 +521,6 @@ ul {
   color: transparent;
   background-image: linear-gradient(351deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
-  -webkit-background-clip: text;
 }
 .wrapper-menu__heart--regular {
   opacity: 1;
@@ -876,7 +837,6 @@ ul {
   color: transparent;
   background-image: linear-gradient(351deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
-  -webkit-background-clip: text;
 }
 .card__heart--regular {
   opacity: 1;
